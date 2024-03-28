@@ -1,15 +1,188 @@
-let salary = [
-    [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
-    [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
-    [150, 151, 152, 150, 150, 150, 150, 150, 150, 150, 150, 185],
-    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-    [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
-    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-    [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
-    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
-    [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
-    [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
-];
+const obj = {
+  name: "Edis",
+
+}
+const obj1 = obj
+
+console.log(obj === obj1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let obj = {
+//     name : "James Bond"
+// }
+
+// console.log(obj2.name)
+
+
+
+
+
+
+
+
+// let second = 'full name'
+
+
+// let objDummy = {
+//    number: "121212",
+//    name:"sfvfdgfd",
+//    fullname:"fljfvnefk"
+// }
+
+// objDummy['full name'] = 'Selimov Javid'
+
+// objDummy.newProperty = 'Just for testing'
+
+// objDummy['full name'] = 'Selimov Javidan'
+
+
+// console.log(objDummy)
+
+
+// let arrayOfElement  = [
+//    objDummy,objDummy2
+// ]
+
+// arrayOfElement[0].number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let massivWithOutTax = [120,200,25,1000]
+
+// const addTax = (massive)=>{
+//     let deyer = massive.map((item)=>{
+//      return item*1.2
+//    })
+//    return deyer
+// }
+// console.log(addTax(massivWithOutTax))
+
+// let charArray = ["a","A","x","X"]
+
+// console.log(charArray.sort((a,b)=>b-a))
+
+// console.log(addTax(massivWithOutTax))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const arr = [5, -10, 15, -20];
+// const result = arr.filter((item, index) => {
+//   return item < 0;
+// });
+
+// console.log(result);
+// [-10, -20]
+
+
+
+
+// const arr = [5, 10, 15, 20];
+// const result = arr.find((item, index) => {
+//   return item < 0;
+// });
+
+// console.log(result);
+
+
+
+// let textMassive = [
+//     "Salam Dunya",
+//     "Hello World",
+//     "Privet Mir"
+// ]
+
+// let textMassiveGetter = function(massiveOfText){
+
+// }
+
+// textMassiveGetter(textMassive)
+
+
+
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const newArray = arr.map((item,index)=>{
+//     return [item,index]
+// })
+
+// console.log(newArray,'new')
+// console.log(arr,'original')
+
+// const newArr = arr.map((item, index) => {
+//   return item + 5;
+// });
+// console.log(newArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let salary = [
+//     [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+//     [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
+//     [150, 151, 152, 150, 150, 150, 150, 150, 150, 150, 150, 185],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
+//     [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
+// ];
 
 // function getAnnualSalary (){
 //    return salary.map(employe=>{
@@ -29,18 +202,18 @@ let salary = [
 // }
 // console.log( getMonthlySalary(8))
 
-function getQuarterSalary(quarter){
-     let start = (quarter-1)*3;
-     let end = ((quarter-1)*3)+3
-     return salary.map((item)=>{
-      return item.slice(start,end).reduce((total,element)=>total+element,0)
-   }).reduce((total,element)=>total+element,0)
+// function getQuarterSalary(quarter){
+//      let start = (quarter-1)*3;
+//      let end = ((quarter-1)*3)+3
+//      return salary.map((item)=>{
+//       return item.slice(start,end).reduce((total,element)=>total+element,0)
+//    }).reduce((total,element)=>total+element,0)
  
-}
+// }
 
 
 
-console.log(getQuarterSalary(4) )
+// console.log(getQuarterSalary(4) )
 
 
 
