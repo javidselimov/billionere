@@ -1,21 +1,170 @@
-let  player = {
-  'first name': 'Eric',
-  'last name': 'Cartman',
-  isPremium: true,
-  level: 14,
-  reletaion:{
-    name:"Megan"
-    
-  },
-  getFullName(){
-     console.log(this['first name'])
-  },
-  getObj:()=>{
-    console.log(player['first name'])
-  }
-}
 
-player=7;
+// class Vehicle {
+
+//   #count = 0
+//   constructor(maxSpeed, color) {
+//     this.maxSpeed = maxSpeed;
+//     this.color = color;
+//   }
+
+//   add(){
+//     this.#count+=1
+//   }
+// }
+
+
+// let newObj = new Vehicle(100,'white');
+
+// console.log(newObj)
+
+
+// let obj = (()=>{
+//     let data = 0
+
+//     getData = ()=>{
+//        return data
+//     }
+
+//     setData = (value)=>{
+//        data = value
+//     }
+//     return {getData, setData}
+// })()
+
+// // console.log(obj.getData())
+// obj.setData(500)
+// console.log(obj.getData())
+
+
+
+
+
+
+
+
+
+
+
+
+// class Vehicle {
+//   constructor(maxSpeed, color) {
+//     this.maxSpeed = maxSpeed;
+//     this.color = color;
+//   }
+// }
+
+// class Car extends Vehicle {
+//   constructor(maxSpeed, color, mileage) {
+//     super(maxSpeed, color);
+//     this.mileage = mileage;
+//   }
+// }
+// let car1 =  new Car (200,'white',1000000);
+
+// console.log(car1)
+
+
+
+
+
+
+// class User{
+//     constructor(name,department,isAvailable,toggleAvailable,cool){
+//    this.name = name
+//    this.department = department
+//    this.isAvailable = isAvailable
+//    this.cool = cool
+  
+// }
+// toggleAvailable(){
+//     console.log(this)
+// }
+// }
+
+// let user1  =  new User("EhmedAga","IT",true)
+// let user2  =  new User("EhmedAga","IT",true)
+
+
+
+// console.log(user1)
+
+
+
+//  constructor function
+// function User(name,department,isAvailable,toggleAvailable){
+//    this.name = name
+//    this.department = department
+//    this.isAvailable = isAvailable
+//    this.toggleAvailable = toggleAvailable
+// }
+
+// let user1  =  new User("EhmedAga","IT",true,function(){console.log(this)})
+
+
+
+// //  Factory function
+
+// function person (name,department,isAvailable,toggleAvailable){
+//     return {
+//             name,
+//             department,
+//             isAvailable,
+//             toggleAvailable
+//     }
+// }
+
+// const user2 = person("Ehmed","IT",true,function(){console.log(this)});
+// const user2 = person("AgaEhmed","IT",true,function(){console.log(this)});
+
+// // console.log(user1)
+// // console.log(user2)
+// user1.toggleAvailable()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let  player = {
+//   'first name': 'Eric',
+//   'last name': 'Cartman',
+//   isPremium: true,
+//   level: 14,
+//   reletaion:{
+//     name:"Megan"
+
+//   },
+//   getFullName(){
+//      console.log(this['first name'])
+//   },
+//   getObj:()=>{
+//     console.log(player['first name'])
+//   }
+// }
+
+// player=7;
 
 
 // let player = {
@@ -231,10 +380,3 @@ player=7;
 
 
 // console.log(shallowCopy[0][0],'wfwef')
-
-
-
-
-
-
-
