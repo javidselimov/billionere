@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      
+   .image-container{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    
+   }
+   .image-container img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .container-blur{
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top:10px;
+    height: 30px;
+    width:100%;
+    left:0px;
+    z-index: 33333;
+   }
+    </style>
   </head>
   <body>
+
+    <div class="image-container" >
+
+      <div class="container-blur">
+   data burda
+      </div>
+
+      <img src="https://fastly.picsum.photos/id/237/600/300.jpg?hmac=iRVPLLVQxFogSDvoPLrs3stJmz9g636YRQiWCDrU5MM" alt="">
+      
+    </div>
     <form action="https://www.google.com/search" method ='get'>
       <!-- <label for="">
         <input type="text" name="firstname" id="firstname" placeholder="Name"  />
@@ -17,7 +52,10 @@
      <label>
          <input type="text" name="q" id="age" placeholder="Metn daxil et" />
      </label>
-     <button >Axtar</button>
+     <button >Axtar
+      <button >Axtarma</button>
+     </button>
+     
     </form>
 
     <script src="./index.js"></script>
